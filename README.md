@@ -1,2 +1,3 @@
-# my-first-repo
-My first GitHub lab repository
+# About
+Muhammad Huzaifa
+26p-0647
