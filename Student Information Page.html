@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Huzaifa | Student Information Page</title>
+<style>
+  :root {
+    --navy: #1e3a8a;
+    --navy-dark: #172c6b;
+    --bg: #f4f6fb;
+    --card: #ffffff;
+    --text: #222;
+    --muted: #5b6270;
+    --line: #d9deea;
+    --soft: #eaeffb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    background: var(--navy);
+    color: #fff;
+    padding: 44px 20px;
+    text-align: center;
+  }
+  header h1 { margin: 0 0 6px; font-size: 2rem; }
+  header h2 { margin: 0 0 4px; font-size: 1.15rem; font-weight: normal; }
+  header p { margin: 0; opacity: .85; }
+  nav {
+    background: var(--navy-dark);
+    text-align: center;
+    padding: 10px;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: .95rem;
+  }
+  nav a:hover, nav a:focus { text-decoration: underline; }
+  main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 16px;
+  }
+  section {
+    background: var(--card);
+    padding: 24px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  h2.title {
+    margin: 0 0 12px;
+    color: var(--navy);
+    font-size: 1.35rem;
+    border-bottom: 2px solid var(--soft);
+    padding-bottom: 8px;
+  }
+  h3 { color: var(--navy); margin: 18px 0 6px; }
+  p { margin: 0 0 10px; }
+  ul, ol { margin: 0; padding-left: 22px; }
+  li { margin-bottom: 4px; }
+  .cols { display: flex; gap: 24px; flex-wrap: wrap; }
+  .cols > div { flex: 1 1 240px; }
+  .table-wrap { overflow-x: auto; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    min-width: 460px;
+  }
+  caption {
+    text-align: left;
+    font-weight: bold;
+    color: var(--muted);
+    padding-bottom: 8px;
+  }
+  th, td {
+    border: 1px solid var(--line);
+    padding: 9px 10px;
+    text-align: left;
+  }
+  thead th, tr.head th { background: var(--navy); color: #fff; }
+  td.num, th.num { text-align: center; }
+  tr.total th { background: var(--soft); color: var(--text); }
+  .pass { color: #176b2c; font-weight: bold; }
+  .free { color: var(--muted); }
+  .holiday { text-align: center; background: var(--soft); font-weight: bold; }
+  footer { text-align: center; color: var(--muted); padding: 24px 16px 32px; }
+  a:focus-visible { outline: 3px solid #fbbf24; outline-offset: 2px; }
+  @media (max-width: 520px) {
+    header h1 { font-size: 1.6rem; }
+    section { padding: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>FAST-NUCES Peshawar</h1>
+  <h2>Department of Computer Science</h2>
+  <p>Student Information Page</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#hobbies">Hobbies</a>
+  <a href="#subjects">Subjects</a>
+  <a href="#result">Result</a>
+  <a href="#timetable">Timetable</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+  <section>
+    <p>
+      Welcome to the student information page. This page shows my details,
+      subjects, semester result and weekly timetable. It is hosted for free
+      using GitHub Pages.
+    </p>
+  </section>
+
+  <section id="about">
+    <h2 class="title">About Me</h2>
+    <p>
+      My name is Muhammad Huzaifa. I am a student of BS Computer Science.
+      I like programming, reading books, and playing cricket.
+    </p>
+  </section>
+
+  <section id="hobbies">
+    <h2 class="title">My Hobbies</h2>
+    <ul>
+      <li>Programming</li>
+      <li>Reading Books</li>
+      <li>Playing Cricket</li>
+      <li>Traveling</li>
+    </ul>
+  </section>
+
+  <section id="subjects">
+    <h2 class="title">Subjects I Am Studying</h2>
+    <div class="cols">
+      <div>
+        <ol>
+          <li>Data Structures</li>
+          <li>Artificial Intelligence</li>
+          <li>Database Systems</li>
+          <li>Web Engineering</li>
+        </ol>
+      </div>
+      <div>
+        <h3 style="margin-top:0">Web Technologies</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="result">
+    <h2 class="title">Semester Result</h2>
+    <p>The table below shows the marks of the current semester.</p>
+    <div class="table-wrap">
+      <table>
+        <caption>Semester Result - Fall 2026</caption>
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th class="num">Mid Term</th>
+            <th class="num">Final Term</th>
+            <th class="num">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data Structures</td>
+            <td class="num">25</td>
+            <td class="num">45</td>
+            <td class="num">70</td>
+          </tr>
+          <tr>
+            <td>Artificial Intelligence</td>
+            <td class="num">28</td>
+            <td class="num">50</td>
+            <td class="num">78</td>
+          </tr>
+          <tr>
+            <td>Database Systems</td>
+            <td class="num">22</td>
+            <td class="num">40</td>
+            <td class="num">62</td>
+          </tr>
+          <tr class="total">
+            <th colspan="3">Grand Total</th>
+            <th class="num">210</th>
+          </tr>
+          <tr class="total">
+            <th colspan="3">Result</th>
+            <th class="num pass">Pass</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="timetable">
+    <h2 class="title">Weekly Timetable</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>8:00 - 9:30</th>
+            <th>9:30 - 11:00</th>
+            <th>11:00 - 12:30</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Monday</strong></td>
+            <td>Data Structures</td>
+            <td>AI Lab</td>
+            <td class="free">Free</td>
+          </tr>
+          <tr>
+            <td><strong>Tuesday</strong></td>
+            <td>Database Systems</td>
+            <td>Web Engineering</td>
+            <td class="free">Free</td>
+          </tr>
+          <tr>
+            <td><strong>Wednesday</strong></td>
+            <td class="holiday" colspan="3">Holiday</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="title">Contact</h2>
+    <p>
+      For any query, contact the department office during working hours.
+    </p>
+  </section>
+
+</main>
+
+<footer>&copy; 2026 Muhammad Huzaifa &middot; FAST-NUCES Peshawar</footer>
+
+</body>
+</html>
